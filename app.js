@@ -7,7 +7,7 @@
 const addSum=(a)=>(b)=>(c)=>a+b+c;
 let sum=addSum(2)(3)(4);
 console.log(sum);
-*/
+
 //pure functions are functions whch have no side effects, that's there output remains always the same
 //give example with array.push() and array.concat([number]);
 
@@ -58,3 +58,25 @@ const addition=memoizAddition();
 console.log(addition(20));
 console.log(addition(20));
 console.log(addition(20))
+*/
+//hoisting is a JavaScript mechanism where the variables, function declarations
+//and classes are moved to the top of their scope before code execution 
+//JavaScript only hoists declarations but not the intialization
+//classes are just syntactic sugar over javascript prototype based inheritance
+
+//what is a closure?
+//A closure is the combination of function and the lexical environment within which that
+//function is declared i.e. its inner function that has access to the outer or 
+//enclosing function's variables
+
+//what is web storage
+//web storage is simply an API that allows to store data in web browser in key value pairs
+//local storage 
+//session storage
+
+function goBack() {
+    window.history.back();
+  }
+  function goForward() {
+    window.history.forward();
+  }
