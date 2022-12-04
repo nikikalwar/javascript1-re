@@ -73,10 +73,56 @@ console.log(addition(20))
 //web storage is simply an API that allows to store data in web browser in key value pairs
 //local storage 
 //session storage
-
+/*
 function goBack() {
     window.history.back();
   }
   function goForward() {
     window.history.forward();
   }
+ 
+
+  //what are javascript accessors
+  //the set and get method
+
+  var user={
+    firstName:"Niki",
+    lastName:"sah",
+    get fname(){
+      return this.firstName;
+    },
+    set fname(fname){
+      return this.firstName=fname
+    }
+  }
+
+  console.log(user.fname); // getter access lang as en
+user.fname = 'fr';
+console.log(user.fname);
+
+try {
+  greeting("Welcome");
+} catch (err) {
+  console.log("error object is an inbuilt object which has two properties name and message")
+  console.log(err.name + "<br>" + err.message);
+}
+
+var marks = [50, 20, 70, 60, 45, 30];
+console.log(Math.min.apply(null,marks)); //gives the min 
+console.log(Math.max.apply(null,marks)); //gives the max;
+
+
+//what is comma operator
+var x=1;
+x=(x--,1,0);
+console.log(x);
+
+//what is a collation
+//collation is used for sorting a set of strings
+ */
+//how to know if you are in strict mode
+'use strict'
+function checkStrictMode(){
+  console.log(this)
+}
+checkStrictMode();
